@@ -32,16 +32,16 @@ int main(){
     cin >> size_3D.z;
     
     /* Allocation of 1D Array  */
-    int* Array_1D = new int[size_1D.x];
+    int *Array_1D = new int[size_1D.x];
 
     /* Allocation of 2D Array  */
-    int** Array_2D = new int*[size_2D.x];
+    int **Array_2D = new int*[size_2D.x];
     for (int i = 0; i<size_2D.x; i++){
         Array_2D[i] = new int[size_2D.y];
     }
 
     /* Allocation of 3D Array  */
-    int*** Array_3D = new int**[size_3D.x];
+    int ***Array_3D = new int**[size_3D.x];
     for(int i = 0; i<size_3D.x; i++){
         // Allocate memory blocks for
         // rows of each 2D array
